@@ -6,8 +6,8 @@ def st(u,c):
     u.message.reply_text("Welcome to this bot")
 
 def upp(u,c):
-    f = str(c.bot.get_file(u.message.photo[-1]).download())
-    u.message.reply_text(f"Your File name is {f}")
+    ff = str(c.bot.get_file(u.message.photo[-1]))
+    u.message.reply_text(ff)
 
 
 up = Updater("5609178227:AAFukFJwF229CI9T0SetibLZBHpHx0T7Qh0", use_context=True)
