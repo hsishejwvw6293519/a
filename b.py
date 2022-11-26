@@ -6,7 +6,7 @@ def st(u,c):
     u.message.reply_text("Welcome to this bot")
 
 def up(u,c):
-    f = str(c.bot.get_file(u.message.photo[-1].download()))
+    f = str(c.bot.get_file(u.message.photo[-1]).download()))
     u.message.reply_text(f"Your File name is {f}")
 
 
